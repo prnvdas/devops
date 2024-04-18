@@ -2,7 +2,7 @@ I will create a straightforward text-based cheat sheet summarizing all the basic
 
 ### Git Cheat Sheet
 
-#### Setup and Config
+#### Setup and Config ##My conflict
 - **Configure Name and Email**
   ```bash
   git config --global user.name "Your Name"
