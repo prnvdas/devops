@@ -1,0 +1,107 @@
+I will create a straightforward text-based cheat sheet summarizing all the basic Git commands used in a typical workflow, covering initialization, basic operations, branching, and collaboration. This cheat sheet will include concise descriptions and examples.
+
+### Git Cheat Sheet
+
+#### Setup and Config ##My conflict
+- **Configure Name and Email**
+  ```bash
+  git config --global user.name "Your Name"
+  git config --global user.email "your_email@example.com"
+  ```
+
+#### Initialize Repository
+- **Create New Local Repository**
+  ```bash
+  mkdir MyRecipes
+  cd MyRecipes
+  git init
+  ```
+
+#### Basic Snapshotting
+- **Check Status**
+  ```bash
+  git status
+  ```
+- **Add Files to Staging**
+  ```bash
+  git add <filename>
+  git add .
+  ```
+- **Commit Changes in Staged Files**
+  ```bash
+  git commit -m "Commit message"
+  ```
+
+#### Branching & Merging
+- **List Branches**
+  ```bash
+  git branch
+  ```
+- **Create New Branch**
+  ```bash
+  git branch <new-branch>
+  ```
+- **Switch Branches**
+  ```bash
+  git checkout <branch-name>
+  ```
+- **Create and Switch to New Branch**
+  ```bash
+  git checkout -b <new-branch>
+  ```
+- **Merge a Branch into Active Branch**
+  ```bash
+  git merge <branch>
+  ```
+
+#### Sharing & Updating Projects
+- **Clone a Repository**
+  ```bash
+  git clone <url>
+  ```
+- **Pull Latest Changes from Remote Repository**
+  ```bash
+  git pull
+  ```
+- **Push Local Branches to Remote Repository**
+  ```bash
+  git push origin <branch>
+  ```
+
+#### Inspection & Comparison
+- **Show Commit History**
+  ```bash
+  git log
+  ```
+- **Show Changes Not Yet Staged**
+  ```bash
+  git diff
+  ```
+
+### Collaborative Workflow Example
+- **Clone and Start Working**
+  ```bash
+  git clone https://github.com/yourusername/MyRecipes.git
+  git checkout -b feature-xyz
+  ```
+- **Make Changes and Commit**
+  ```bash
+  echo "New Recipe" > new_recipe.txt
+  git add new_recipe.txt
+  git commit -m "Add new recipe"
+  ```
+- **Push Changes for Review**
+  ```bash
+  git push origin feature-xyz
+  ```
+- **Create Pull Request** (on GitHub or similar platforms)
+
+- **Merge Feature Branch After Approval**
+  ```bash
+  git checkout main
+  git pull origin main
+  git merge feature-xyz
+  git push origin main
+  ```
+
+This cheat sheet provides a compact overview of common Git commands necessary for managing a personal project or collaborating in a team setting. Keep it handy for quick reference as you work on your projects!
